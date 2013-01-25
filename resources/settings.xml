@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
+  <category label="30007">
+    <setting type="lsep" label="30008" />
     <setting id="output_dir" type="folder" label="30000" default="" />
     <setting id="output_file" type="text" label="30001" default="" />
-    <setting type="lsep" label="30002" />
-    <setting id="custom_file_extensions" type="text" label="30003" default="" />
-    <setting type="sep" />
-    <setting id="debug" type="bool" label="30004" default="false" />
+    <setting id="clear_output_file" type="select" label="30009" lvalues="30010|30011|30012|30013|30014" />
+    <setting type="lsep" />
+    <setting id="debug" type="bool" label="30002" default="false" />
+    <setting id="strip_path" type="bool" label="30006" default="false" />
+    <setting type="lsep" label="30003" />
+    <setting id="custom_file_extensions" type="text" label="30004" default="mpg;mpeg;avi;flv;wmv;mkv;264;3g2;3gp;ifo;mp4;mov;iso;divx;ogm" />
+    <setting id="skip_content" type="text" label="30005" default="sample;extra;interviews" />
+    </category>
 </settings>
 

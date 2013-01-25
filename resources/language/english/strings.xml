@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
     <!-- Settings -->
-    <string id="30000">Output Directory</string>
-    <string id="30001">Output File</string>
-    <string id="30002">Misc Settings (semicolon delimited)</string>
-    <string id="30003">Custom File Extensions</string>
-    <string id="30004">Debug</string>
+    <string id="30000">Output directory</string>
+    <string id="30001">Output file</string>
+    <string id="30002">Debug (search for 'MMV' prefix in xbmc.log)</string>
+    <string id="30003">Miscellaneous settings (semicolon delimited)</string>
+    <string id="30004">File extensions</string>
+    <string id="30005">Skip paths/filenames containing</string>
+    <string id="30006">Strip path from filenames</string>
+    <string id="30007">General</string>
+    <string id="30008">General settings</string>
+    <string id="30009">Clear output file</string>
+    <string id="30010">Never</string>
+    <string id="30011">Before movies</string>
+    <string id="30012">Before episodes</string>
+    <string id="30013">Ask</string>
+    <string id="30014">Always</string>
+    <!-- Script -->
+    <string id="30200">Missing movies</string>
+    <string id="30201">Missing episodes</string>
+    <string id="30202">Help</string>
+    <string id="30203">Error</string>
+    <string id="30204">Contact developer if this was not expected.</string>
+    <string id="30205">No movie sources found!</string>
+    <string id="30206">No TV sources found!</string>
+    <string id="30207">No episodes found for </string>
+    <string id="30208">Ask questions on the XBMC forum if you need help.</string>
+    <string id="30209">Getting episodes for </string>
+    <string id="30210">Scanned: </string>
+    <string id="30211"> directories, </string>
+    <string id="30212"> files</string>
+    <string id="30213">Path: </string>
+    <string id="30214">Scan running</string>
+    <string id="30215">Scan started</string>
+    <string id="30216">Getting movie sources</string>
+    <string id="30217">Getting movies</string>
+    <string id="30218">Getting missing movies</string>
+    <string id="30219">Populating list</string>
+    <string id="30220">Getting TV sources</string>
+    <string id="30221">Getting episodes</string>
+    <string id="30222">Getting missing episodes</string>
 </strings>
+
 

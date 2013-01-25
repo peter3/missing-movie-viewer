@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.missingmovies"
        name="Missing Movie Viewer"
-       version="2.0.18"
+       version="2.0.16"
        provider-name="Nathan Hoad">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
-        <provides>video</provides>
+        <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">MMV is a plugin for searching your source folders for videos not in the library..</summary>
+    <summary lang="en">MMV is a plugin for searching your source folders for videos not in the library...</summary>
  <description lang="en">Missing Movie Viewer searches your source folders for videos not present in the library and displays them for you to view or add to the library yourself.
 
-Currently it has built in handle for the following file types:
+Currently it defaults to the following file types (can be changed in settings):
 mpg, mpeg, avi, flv, wmv, mkv, 264, 3g2, 3gp, vob, mp4, mov, iso and ogm.
 
 If you see any glaring errors or missing files that simply NEED to be in this list, let me know.
-
-Custom file extensions may be added via the settings menu.
 
  </description>
   </extension>
