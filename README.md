@@ -11,3 +11,7 @@ This is a fork of Nathan Hoads plugin with a few new and fixed options:
 * You can clear the output file before the scan
 * File extensions are not hard-coded, instead they have a default
 * You can skip files with specific filename parts (like 'sample' or 'extra')
+
+Note that this version uses the default.py file from fedearne as its base from here:
+
+http://forum.xbmc.org/showthread.php?tid=90258&pid=1070904#pid1070904
