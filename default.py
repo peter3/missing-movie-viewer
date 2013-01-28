@@ -329,7 +329,7 @@ def show_movie_submenu():
     done = 10
     progress.update(done, __language__(30217))
     log("SEARCHING MOVIES", xbmc.LOGNOTICE)
-    # this magic section adds the files from trailers and sets!
+    # this magic section adds the files from sets!
     for m in movies:
         f = clean_path(m['file'])
 
@@ -338,44 +338,15 @@ def show_movie_submenu():
             set_files = eval(xbmc.executeJSONRPC(json.encode('utf-8')))
 
             sub_files = []
-            sub_trailers =  []
 
             for item in set_files['result']['files']:
                 sub_files.append(clean_path(item['file']))
-                try:
-                    trailer = item['trailer']
-                    if not trailer.startswith('http://'):
-                        log("Found a trailer", xbmc.LOGINFO)
-                        library_files.append(clean_path(trailer))
-                except KeyError as e:
-                    log("show_movie_submenu exception %s" % str(e), xbmc.LOGINFO)
-                    pass
-
             library_files.extend(sub_files)
-            library_files.extend(sub_trailers)
         elif f.startswith('stack://'):
             stack = decode_stacked(f)
             library_files.extend(stack)
-            #for m in stack:
-            try:
-                trailer = m['trailer']
-                if not trailer.startswith('http://'):
-                    log("Found a trailer", xbmc.LOGINFO)
-                    library_files.append(clean_path(trailer))
-            except KeyError as e:
-                log("show_movie_submenu exception %s" % str(e), xbmc.LOGINFO)
-                pass
         else:
             library_files.append(f)
-            try:
-                trailer = m['trailer']
-                if not trailer.startswith('http://'):
-                    log("Found a trailer", xbmc.LOGINFO)
-                    library_files.append(clean_path(trailer))
-            except KeyError:
-                log("show_movie_submenu exception %s" % str(e), xbmc.LOGINFO)
-                pass
-
     library_files = set(library_files)
     
     done = 50
@@ -397,11 +368,7 @@ def show_movie_submenu():
     #log("movie_file -> missing %s" % missing, xbmc.LOGNOTICE)
     for movie_file in missing:
         # get the end of the filename without the extension
-        if os.path.splitext(movie_file.lower())[0].endswith("trailer"):
-            log("%s is a trailer and will be ignored!" % movie_file, xbmc.LOGINFO)
-            missing.remove(movie_file)
-        else:
-            addDirectoryItem(movie_file, isFolder=False, totalItems=len(missing))
+        addDirectoryItem(movie_file, isFolder=False, totalItems=len(missing))
 
     if __outputfile__:
         clear_output(BEFORE_MOVIES)
