@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <!-- Settings -->
+    <string id="30000">Katalog för resultatfil</string>
+    <string id="30001">Filnamn för resultatfil</string>
+    <string id="30002">Debug (sök efter 'MMV' i xbmc.log)</string>
+    <string id="30003">Blandade inställningar (semikolonavgränsade)</string>
+    <string id="30004">Filändelser</string>
+    <string id="30005">Hoppa över filnamn med</string>
+    <string id="30006">Ta bort sökväg från filnamn</string>
+    <string id="30007">Generellt</string>
+    <string id="30008">Generella inställningar</string>
+    <string id="30009">Töm resultatfil</string>
+    <string id="30010">Aldrig</string>
+    <string id="30011">Före filmsökning</string>
+    <string id="30012">Före avsnittssökning</string>
+    <string id="30013">Fråga</string>
+    <string id="30014">Alltid</string>
+    <!-- Script -->
+    <string id="30200">Missing movies</string>
+    <string id="30201">Missing episodes</string>
+    <string id="30202">Help</string>
+    <string id="30203">Error</string>
+    <string id="30204">Contact developer if this was not expected.</string>
+    <string id="30205">No movie sources found!</string>
+    <string id="30206">No TV sources found!</string>
+    <string id="30207">No episodes found for </string>
+    <string id="30208">Ask questions on the XBMC forum if you need help.</string>
+    <string id="30209">Getting episodes for </string>
+    <string id="30210">Scanned: </string>
+    <string id="30211"> directories, </string>
+    <string id="30212"> files</string>
+    <string id="30213">Path: </string>
+    <string id="30214">Scan running</string>
+    <string id="30215">Scan started</string>
+    <string id="30216">Getting movie sources</string>
+    <string id="30217">Getting movies</string>
+    <string id="30218">Getting missing movies</string>
+    <string id="30219">Populating list</string>
+    <string id="30220">Getting TV sources</string>
+    <string id="30221">Getting episodes</string>
+    <string id="30222">Getting missing episodes</string>
+</strings>
+
+
